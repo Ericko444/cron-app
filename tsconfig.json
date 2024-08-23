@@ -1,11 +1,12 @@
 {
     "compilerOptions": {
-      "module": "commonjs",
-      "esModuleInterop": true,
-      "target": "es6",
-      "moduleResolution": "node",
-      "sourceMap": true,
-      "outDir": "dist"
+      "target": "ES6",                        // Specify ECMAScript target version
+      "module": "CommonJS",                   // Specify module code generation
+      "strict": true,                         // Enable all strict type-checking options
+      "esModuleInterop": true,                // Enables emit interoperability between ES Modules and CommonJS modules
+      "skipLibCheck": true,                   // Skip type checking of all declaration files
+      "forceConsistentCasingInFileNames": true // Ensure consistent casing in file names
     },
-    "lib": ["es2015"]
+    "exclude": ["node_modules"]               // Exclude "node_modules" from compilation
   }
+  

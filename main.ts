@@ -1,5 +1,3 @@
-const Deno = require('deno');
-
 const APP_URLS = [
     "https://practice-architecture.fly.dev",
     "https://practice-archi-front.fly.dev"

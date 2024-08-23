@@ -38,5 +38,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "erickoandri-cron-app-61"
-          entrypoint: "main.js"
-          root: "dist"
+          entrypoint: "main.ts"
+          root: ""

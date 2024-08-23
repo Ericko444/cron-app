@@ -31,9 +31,12 @@ jobs:
       - name: Install step
         run: "npm install"
 
+      - name: Build step
+        run: "npx tsc"
+
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "erickoandri-cron-app-61"
-          entrypoint: "main.ts"
-          root: ""
+          entrypoint: "main.js"
+          root: "dist"
